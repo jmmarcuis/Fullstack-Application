@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter&family=Lato&family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,800;0,900;1,100;1,200;1,700;1,900&family=Poppins&family=Roboto+Condensed:wght@400;500&family=Roboto:ital,wght@0,500;0,900;1,400&display=swap');
+
+.aboutus-container {
+    margin: 100px 0 ;
+    margin-left: -10%;
+    padding: 50px;
+    width: 120%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: #1e6353;
+    color: #ffffff;
+    font-family: "Anton", sans-serif;
+}
+
+.aboutus-title {
+    padding-top: 100px;
+    
+    font-size: 130px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.aboutus-container hr {
+    width: 80%;
+    background-color: #5EC3AB;
+    height: 3px;
+    border: none;
+    margin: 40px 0;
+}
+
+.aboutus-header-text {
+    text-align: center;
+    width: 70%;
+    font-size: 70px;
+    font-weight: lighter;
+    padding: 30px 0;
+}
+
+.aboutus-header-text-left {
+    text-align: start;
+    width: 70%;
+    font-size: 70px;
+    font-weight: lighter;
+    padding-top: 30px;
+}
+
+
+.aboutus-descriptions {
+    margin-top: 100px;
+    font-size: 35px;
+    text-align: justify;
+}
+
+.aboutus-descriptions-b {
+    margin-top: 100px;
+    font-size: 35px;
+    text-align: justify;
+}
+
+.aboutus-descriptions-c {
+    margin-top: 100px;
+    font-size: 35px;
+    text-align: center;
+    color: black;
+    padding-top: -30px;
+}
+
+.aboutus-descriptions-d {
+    color: #006260;
+    font-size: 40px;
+    margin-top: 100px;
+    text-align: center;
+    padding-top: -30px;
+}
+
+.aboutus-parts-wrapper {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    padding: 30px 0;
+}
+
+.aboutus-parts-wrapper-1 {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    padding: 30px 0;
+    margin-top: -140px;
+}
+
+
+.aboutus-text-container {
+    width: 50%
+}
+
+.aboutus-square-photo-container {
+    background-color: white;
+    padding: 20px 20px 60px 20px;
+    height: 700px;
+    width: 700px;
+    box-shadow:  20px 20px rgba(0, 0, 0, 0.5)
+}
+
+.aboutus-rectangle-photo-container {
+    background-color: white;
+    padding: 20px 20px 60px 20px;
+    height: 700px;
+    width: 2000px;
+    box-shadow:  20px 20px rgba(0, 0, 0, 0.5)
+}
+
+.aboutus-rectangle-photo-container-2 {
+    background-color: white;
+    padding: 20px 20px 60px 20px;
+    height: 300px;
+    width: 2000px;
+    box-shadow:  20px 20px rgba(0, 0, 0, 0.5)
+}
+
+
+.aboutus-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: black;
+}
+
+@media (max-width: 1600px) {
+    .aboutus-title {
+        font-size: 100px;
+    }
+
+    .aboutus-header-text {
+        font-size: 50px;
+    }
+
+    .aboutus-header-text-left {
+        font-size: 60px;
+    }
+
+    .aboutus-parts-wrapper {
+        align-items: center;
+        width: 80%;
+        display: flex;
+    }
+
+    .aboutus-parts-wrapper-1 {
+        width: 60%;
+        margin-left: 25%;
+    }
+
+    .aboutus-descriptions {
+        margin-left: -35%;
+        width: 130%;
+        font-size: 30px;
+    }
+
+    .aboutus-descriptions-b {
+        width: 100%;
+    }
+
+    .aboutus-descriptions-c {
+        margin-top: 40px;
+        font-size: 25px;
+        padding-top: -30px;
+    }
+
+    .aboutus-descriptions-d {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    .aboutus-square-photo-container {
+        width: 500px;
+        height: 500px;
+    }
+
+    .aboutus-header-text-left {
+        font-size: 35px;
+    }
+
+    .aboutus-rectangle-photo-container {
+        height: 400px;
+        width: 100%;
+    }
+
+    .aboutus-rectangle-photo-container-2 {
+        height: 200px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .aboutus-title {
+        font-size: 90px;
+    }
+
+    .aboutus-header-text {
+        font-size: 40px;
+    }
+
+    .aboutus-header-text-left {
+        font-size: 40px;
+    }
+
+    .aboutus-parts-wrapper {
+        align-items: center;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .aboutus-parts-wrapper-1 {
+        width: 60%;
+        margin-left: 25%;
+    }
+
+    .aboutus-descriptions {
+        margin-left: -40%;
+        width: 180%;
+        font-size: 20px;
+    }
+
+    .aboutus-descriptions-b {
+        margin-left: -40%;
+        width: 180%;
+        font-size: 20px;
+    }
+
+    .aboutus-descriptions-c {
+        margin-top: 40px;
+        font-size: 25px;
+        padding-top: -30px;
+    }
+
+    .aboutus-descriptions-d {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    .aboutus-square-photo-container {
+        width: 500px;
+        height: 500px;
+    }
+
+    .aboutus-header-text-left {
+        font-size: 35px;
+    }
+
+    .aboutus-rectangle-photo-container {
+        height: 400px;
+        width: 100%;
+    }
+
+    .aboutus-rectangle-photo-container-2 {
+        height: 200px;
+        width: 100%;
+    }
+}

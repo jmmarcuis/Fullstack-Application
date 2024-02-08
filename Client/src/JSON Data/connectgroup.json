@@ -29,7 +29,7 @@
     },
     {
       "Volunteerid": 5,
-      "videoUrl": "video.mkv",
+      "videoUrl": "../src/assets/siteimages/donationpage/volunteerimg/basketballmodal.jpg",
       "imageUrl": "../src/assets/siteimages/donationpage/connectimg/bc.png",
       "title": "Basketball Connect",
       "description": "Basketball Connect, an engaging connect group that fosters relationships amongst basketball aficionados in nearby communities. "
