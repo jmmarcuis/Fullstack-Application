@@ -5,31 +5,36 @@ import EventCard from "../Dashboard Contents/Dashboard Components/ConnectgroupCa
 
 const ConnectGroupsContent = () => {
   const hardcodedConnectgroupActivities = [
-    { connectgroupActivityId: 1, 
+    { connectgroupActivityId: 1,
+      connectgroupActivityImage: "../src/assets/siteimages/donationpage/connectimg/yc.png",
       connectgroupActivityName: "Youth Connect",
       connectgroupActivityDescription: "See the Youth Connect participants.",
     },
 
     { connectgroupActivityId: 2, 
+      connectgroupActivityImage: "../src/assets/siteimages/donationpage/connectimg/jc.png",
       connectgroupActivityName: "Jubilant Connect",
       connectgroupActivityDescription: "See the Jubilant Connect participants.",
     },
 
     { connectgroupActivityId: 3, 
-      connectgroupActivityName: "Young Adults Connect",
-      connectgroupActivityDescription: "See the Young Adults Connect participants.",
+      connectgroupActivityImage: "../src/assets/siteimages/donationpage/connectimg/gc.png",
+      connectgroupActivityName: "Gatekeeper Connect",
+      connectgroupActivityDescription: "See the Gatekeeper Connect participants.",
     },
 
     { connectgroupActivityId: 4, 
+      connectgroupActivityImage: "../src/assets/siteimages/donationpage/connectimg/cc.png",
       connectgroupActivityName: "Couples Connect",
       connectgroupActivityDescription: "See the Couples Connect participants.",
     },
     
     { connectgroupActivityId: 5, 
+      connectgroupActivityImage: "../src/assets/siteimages/donationpage/connectimg/bc.png",
       connectgroupActivityName: "Basketball",
       connectgroupActivityDescription: "See the Basketball participants.",
     },
-  ];
+  ]; 
 
   const [connectgroupActivities] = useState(hardcodedConnectgroupActivities);
 

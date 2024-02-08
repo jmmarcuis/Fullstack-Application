@@ -10,8 +10,13 @@
 }
 
 .event-card-img {
-  position: absolute;
   height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.event-card-img-volunteer {
+  height: 85%;
   width: 100%;
   object-fit: cover;
 }
@@ -32,10 +37,12 @@
   width: 2em;
   height: 2em;
   transition: all .3s ease-in-out;
+  
 }
 
 .event-icon {
-  --size: 20px;
+  fill: white;
+  --size: 30px;
   width: var(--size);
   height: var(--size);
 }
@@ -58,8 +65,6 @@
 
 .event-icons {
   position: absolute;
-  top: 20px;
-  right: 20px;
   display: flex;
   gap: 10px;
   color: #555;

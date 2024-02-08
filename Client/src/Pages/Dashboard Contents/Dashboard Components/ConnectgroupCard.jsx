@@ -28,13 +28,14 @@ const ConnectgroupCard = ({ connectgroupActivity, connectgroupActivities  }) => 
 
       <div className="event-icons">
         <div className="icon-container" onClick={openModal}>
+          <img src={connectgroupActivity.connectgroupActivityImage} 
+          className="event-card-img"/>
           {/* <FontAwesomeIcon icon={faEdit} /> */}
         </div>
       </div>
       <div className="event-card-info">
-        <div className="event-card-text">
-          <p className="event-text-title">{connectgroupActivity.connectgroupActivityName}</p>
-        </div>
+        <div className="event-card-text" />
+          
         <div
           className="event-card-button"
           id="display_event_modal"
@@ -60,6 +61,7 @@ const ConnectgroupCard = ({ connectgroupActivity, connectgroupActivities  }) => 
 ConnectgroupCard.propTypes = {
     connectgroupActivity: PropTypes.shape({
         connectgroupActivityId: PropTypes.number.isRequired,
+        connectgroupActivityImage: PropTypes.string.isRequired,
         connectgroupActivityName: PropTypes.string.isRequired,
         connectgroupActivityDescription: PropTypes.string.isRequired,
     }).isRequired,

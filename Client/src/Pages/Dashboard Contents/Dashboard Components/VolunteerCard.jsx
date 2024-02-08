@@ -28,13 +28,13 @@ const VolunteerCard = ({ volunteerActivity, volunteerActivities  }) => {
 
       <div className="event-icons">
         <div className="icon-container" onClick={openModal}>
+          <img src={volunteerActivity.volunteerActivityImage} 
+            className="event-card-img-volunteer"/>
           {/* <FontAwesomeIcon icon={faEdit} /> */}
         </div>
       </div>
       <div className="event-card-info">
-        <div className="event-card-text">
-          <p className="event-text-title">{volunteerActivity.volunteerActivityName}</p>
-        </div>
+        <div className="event-card-text"/>
         <div
           className="event-card-button"
           id="display_event_modal"
@@ -60,6 +60,7 @@ const VolunteerCard = ({ volunteerActivity, volunteerActivities  }) => {
 VolunteerCard.propTypes = {
     volunteerActivity: PropTypes.shape({
         volunteerActivityId: PropTypes.number.isRequired,
+        volunteerActivityImage: PropTypes.string.isRequired,
         volunteerActivityName: PropTypes.string.isRequired,
         volunteerActivityDescription: PropTypes.string.isRequired,
     }).isRequired,
