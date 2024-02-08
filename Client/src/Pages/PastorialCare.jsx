@@ -1,17 +1,17 @@
-import  { useState } from "react";
+import { useState } from 'react';
 import "../Pages/Page Styles/pastorialcare.css";
-import NavBar from "../Components/navBar";
+import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
 import axios from "axios";
 import { toast } from "react-hot-toast";
 
-const pastorialcareService = () => {
+const PastorialCare = () => {
   // State for handling input values
  
-  const [pastorialcareReqData, setpastorialcareReqData] = useState({
+  const [pastorialData, setpastorialData] = useState({
     name: '',
     date: getCurrentDate(), // Set initial date to the current date
-    pastorialcareText: '',
+    pastorialText: '',
   });
 
   function getCurrentDate() {
@@ -25,13 +25,13 @@ const pastorialcareService = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
   
-    const { name, date, pastorialcareText } = pastorialcareReqData;
+    const { name, date, pastorialText } = pastorialData;
   
     try {
-      const response = await axios.post('/pastorial-carerequests/addpastorial-carereq', {
+      const response = await axios.post('/pastorial/addpastorial', {
         name,
         date,
-        pastorialcareText,
+        pastorialText,
       });
   
       const responseData = response.data; // Rename to avoid conflict
@@ -40,16 +40,16 @@ const pastorialcareService = () => {
         toast.error(responseData.error);
       } else {
         // Update only the relevant part of the state
-        setpastorialcareReqData((prevData) => ({
+        setpastorialData((prevData) => ({
           ...prevData,
-          message: 'pastorial-care Request successfully created!',
+          message: 'Pastorial care request successfully created!',
         }));
-        toast.success('pastorial-care Request successfully created!');
+        toast.success('Pastorial care request successfully created!');
   
-        setpastorialcareReqData({
+        setpastorialData({
           name: '',
           date: getCurrentDate(), // Set date to the current date after submission
-          pastorialcareText: '',
+          pastorialText: '',
         });
       }
     } catch (error) {
@@ -67,9 +67,9 @@ const pastorialcareService = () => {
         <div className="pastorial-care-text-container">
           <div className="pastorial-care-text-wrapper">
             <div className="pastorial-video-container">
-              <iframe className="pastorial-video"w 
+              <iframe className="pastorial-video"
               src="https://www.youtube.com/embed/gKcxpNsaZRg?si=O8H92gZTc5BKDtTC" 
-              title="YouTube video player" frameborder="0" 
+              title="YouTube video player" //frameborder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
               gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
@@ -87,8 +87,8 @@ const pastorialcareService = () => {
                 <input
                   type="text"
                   id="pastorial-careclientname"
-                  value={pastorialcareReqData.name}
-                  onChange={(e) => setpastorialcareReqData({ ...pastorialcareReqData, name: e.target.value })}
+                  value={pastorialData.name}
+                  onChange={(e) => setpastorialData({ ...pastorialData, name: e.target.value })}
                   />
               </div>
 
@@ -98,8 +98,8 @@ const pastorialcareService = () => {
                   placeholder="Date:"
                   type="date"
                   id="pastorialcareclientdate"
-                  value={pastorialcareReqData.date}
-                  onChange={(e) => setpastorialcareReqData({ ...pastorialcareReqData, date: e.target.value })}
+                  value={pastorialData.date}
+                  onChange={(e) => setpastorialData({ ...pastorialData, date: e.target.value })}
                   disabled 
                 />
               </div>
@@ -109,8 +109,8 @@ const pastorialcareService = () => {
               <textarea
                 placeholder="Enter pastorial-care..."
                 id="pastorial-careText"
-                value={pastorialcareReqData.pastorialcareText}
-                onChange={(e) => setpastorialcareReqData({ ...pastorialcareReqData, pastorialcareText: e.target.value })}
+                value={pastorialData.pastorialText}
+                onChange={(e) => setpastorialData({ ...pastorialData, pastorialText: e.target.value })}
               />
             </div>
 
@@ -128,4 +128,4 @@ const pastorialcareService = () => {
   );
 };
 
-export default pastorialcareService;
+export default PastorialCare;

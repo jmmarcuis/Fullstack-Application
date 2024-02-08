@@ -22,6 +22,7 @@ import EventsContent from "./Dashboard Contents/EventsContent";
 import ConnectGroupsContent from "./Dashboard Contents/ConnectGroupsContent";
 import PrayerRequestContent from "./Dashboard Contents/PrayerRequestContent";
 import VolunteersContent from "./Dashboard Contents/VolunteersContent";
+import PastorialContent from "./Dashboard Contents/PastorialContent"
 
 import EventList from "./Dashboard Contents/Attendees List/EventList";
 import ConnectgroupList from"./Dashboard Contents/Attendees List/ConnectgroupList"
@@ -204,6 +205,14 @@ function Dashboard({ handleLogout }) {
 
             <div
               className="dashboard-menu-item"
+              onClick={() => handleMenuClick("pastorial")}
+            >
+              <FontAwesomeIcon icon={faPrayingHands} />
+              <p>Pastorial Care</p>
+            </div>
+
+            <div
+              className="dashboard-menu-item"
               id="dashboard-logout"
               onClick={() => handleLogoutClick( )}
             >
@@ -219,6 +228,7 @@ function Dashboard({ handleLogout }) {
           {selectedMenu === "viewevents" && <EventsContent />}
           {selectedMenu === "volunteers" && <VolunteersContent />}
           {selectedMenu === "prayer" && <PrayerRequestContent />}
+          {selectedMenu === "pastorial" && <PastorialContent />}
           {selectedMenu === "connectGroups" && <ConnectGroupsContent />}
           {selectedMenu === "volunteerlist" && <VolunteersList />}
           {selectedMenu === "connectgrouplist" && <ConnectgroupList />}

@@ -1,6 +1,6 @@
 import  { useState } from "react";
 import "../Pages/Page Styles/PrayerServices.css";
-import NavBar from "../Components/navBar";
+import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
 import axios from "axios";
 import { toast } from "react-hot-toast";

@@ -2,7 +2,7 @@ import { useState,   } from "react";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import axios from 'axios';
-import NavBar from "../navBar";
+import NavBar from "../NavBar";
 import Footer from "../Footer";
 import { toast } from "react-hot-toast";
 

@@ -149,3 +149,155 @@ align-items: center; /* Center items horizontally */
       width: 200px
     }
   }
+
+  .pastorial-header-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url('../../assets/sitecoverimages/prayerrequest.jpg') center center/cover no-repeat;
+ }
+
+.NavBar,
+.pastorial-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pastorial-text-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    width: 860px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 90px;
+    line-height: 1.8em;
+ text-transform: uppercase;
+    max-width: 100%; /* Ensure the text does not overflow its container */
+    padding: 0 20px; /* Add padding to prevent text from sticking to the edges */
+
+}
+
+.pastorial-section-container{
+   display: flex;
+   justify-content: center;
+    height: auto;
+    padding: 50px;
+}
+
+.pastorial-request-container{
+ width: 1400px;
+height: auto;
+display: flex;
+ flex-direction: column; /* Change the flex direction to column */
+align-items: center; /* Center items horizontally */
+ }
+
+.pastorial-input-container text{
+    width: 800px;
+}
+
+
+.pastorial-input-container {
+     display: flex;
+     gap: 15px;
+}
+
+ .pastorial-wrapper{
+    display: flex;
+    gap: 60px;
+ }
+
+ #pastorialclientname{
+    width: 470px;
+ }
+
+ #pastorialclientdate{
+    width: 530px;
+ }
+
+ .pastorial-input-container{
+    margin-bottom: 30px;
+    
+ }
+
+ .pastorial-input-container textarea{
+     width: 1195px;
+    height: 520px;
+    resize: none;
+    padding: 20px;
+ }
+
+
+ .pastorial-button {
+    --button_radius: 0.75em;
+    --button_color: #e8e8e8;
+    --button_outline_color: #000000;
+    font-size: 13px;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+    width: 393px; /* Adjusted width for responsiveness */
+  }
+  
+  .pastorial-button-span {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+  }
+  
+  button:hover .pastorial-button-span {
+    transform: translateY(-0.33em);
+  }
+  
+  button:active .pastorial-button-span {
+    transform: translateY(0);
+  }
+  
+  @media screen and (max-width: 768px) {
+ 
+
+    .pastorial-wrapper{
+        flex-direction: column;
+        gap: 0;
+       
+     }
+    
+  
+    .pastorial-text-container {
+      font-size: 50px;
+    }
+  
+    .pastorial-section-container {
+      padding: 20px;
+    }
+  
+    .pastorial-request-container {
+      width: 100%;
+    }
+  
+    .pastorial-input-container textarea {
+      width: 500px;
+    }
+  
+    #pastorialclientname,
+    #pastorialclientdate {
+      width: 100%;
+    }
+  
+    .pastorial-button {
+      width: 200px
+    }
+  }

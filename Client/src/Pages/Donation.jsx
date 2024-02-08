@@ -1,5 +1,5 @@
 import "../Pages/Page Styles/Donation.css";
-import NavBar from "../Components/navBar";
+import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
 
 const Donation = () => {

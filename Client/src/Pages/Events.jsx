@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import NavBar from "../Components/navBar";
+import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
 import "./Page Styles/Events.css";
 import ChurchEventContainer from "../Components/Component Styles/Timeline/EventContainer";

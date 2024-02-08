@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import "./Registration.css";
-import NavBar from "../navBar";
+import NavBar from "../NavBar";
 import Footer from "../Footer";
 import axios from "axios";
 import { toast } from "react-hot-toast";

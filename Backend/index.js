@@ -6,8 +6,9 @@ const{mongoose} = require('mongoose')
 const app = express();
 app.use(cors(
     {
-        origin: ["https://deploy-mern-1whq.vercel.app"],
-        methods: ["POST", "GET"],
+        // origin: ["https://deploy-mern-1whq.vercel.app"],
+        // methods: ["POST", "GET"],
+        origin: 'http://localhost:5173',
         credentials: true
     }
 ))
@@ -34,5 +35,6 @@ app.use('/prayerrequests', require('./routes/prayerRoutes'));
 app.use('/event', require('./routes/eventRoutes'));
 app.use('/volunteer', require('./routes/volunteerRoutes'));
 app.use('/connectgroup', require('./routes/connectgroupRoutes'));
+app.use('/pastorial', require('./routes/pastorialRoutes'));
 
 

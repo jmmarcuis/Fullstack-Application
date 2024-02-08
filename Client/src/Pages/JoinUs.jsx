@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useRef } from "react";
 import "../Pages/Page Styles/JoinUs.css";
-import NavBar from "../Components/navBar";
+import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
 import volunteerData from "../JSON Data/volunteer.json";
 import connectgroupData from "../JSON Data/connectgroup.json";
