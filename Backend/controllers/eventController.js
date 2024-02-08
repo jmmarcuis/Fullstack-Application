@@ -170,10 +170,10 @@ async function deleteEvent (req, res) {
     const deletedRequest = await EventModel.findByIdAndDelete(requestId);
 
     if (!deletedRequest) {
-      return res.status(404).json({ error: "Prayer request not found" });
+      return res.status(404).json({ error: "Event not found" });
     }
 
-    res.json({ message: "Prayer request deleted successfully", deletedRequest });
+    res.json({ message: "Event Deleted sucessfully", deletedRequest });
   } catch (error) {
     console.error("Error deleting prayer request:", error);
     res.status(500).json({ error: "Internal Server Error" });

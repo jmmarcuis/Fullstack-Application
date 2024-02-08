@@ -110,12 +110,9 @@ const EventCard = ({ event, onDelete, onEditSuccess }) => {
         >
           <FontAwesomeIcon icon={faEdit} />
         </div>
-        <div
+         <div
           className="icon-container"
-          onClick={(event, e) => {
-            handleDeleteClick(event._id);
-            e.stopPropagation();
-          }}
+          onClick={() => handleDeleteClick(event._id)}
         >
           <FontAwesomeIcon icon={faTrashAlt} />
         </div>
