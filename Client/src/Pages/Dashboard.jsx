@@ -185,12 +185,7 @@ function Dashboard({ handleLogout }) {
                   >
                     Connect Groups
                   </div>
-                  <div
-                    className="submenu-item"
-                    onClick={() => handleSubMenuClick("eventslist")} //pls change not sure sa name
-                  >
-                    Events
-                  </div>
+                  
                 </div>
               )}
 
